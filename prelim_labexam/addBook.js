@@ -8,7 +8,7 @@ const txtBookAuthor = document.getElementById('txtBookAuthor');
 const txtIsbn = document.getElementById('txtIsbn');
 
 closeAdd.addEventListener('click', () => {
-    modalAdd.style.display = 'none';
+    modalAdd.close();
 });
 
 btnAdd.addEventListener('click', () => {
@@ -47,5 +47,5 @@ formAddBook.addEventListener('submit', async (e) => {
     }
 
     formAddBook.reset();
-    modalAdd.style.display = 'none';
+    modalAdd.close();
 });
