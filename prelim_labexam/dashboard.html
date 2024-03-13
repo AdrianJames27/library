@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <h1>Books</h1><br><br>
+    <body onload="displayBook();">
+        <input type="text" id="txtSearch" placeholder="Search Book Title..."><br><br>
+        <table>
+            <thead>
+                <th>Book Title</th>
+                <th>Book Author</th>
+                <th>ISBN</th>
+            </thead>
+            <tbody id="tblValues"></tbody>
+        </table><br><br>
+        <button id="btnAdd">Add Book</button>
+        <a href="index.html">Logout</a>
+        <dialog id="modalAdd">
+            <span id="closeAdd">&times;</span>
+            <form id="formAddBook">
+                <label for="">Book Title:</label><br>
+                <input type="text" id="txtBookTitle"><br>
+                <label for="">Book Author:</label><br>
+                <input type="text" id="txtBookAuthor"><br>
+                <label for="">ISBN:</label><br>
+                <input type="text" id="txtIsbn"><br>
+                <button id="btnAddBook">Add Book</button>
+            </form>
+        </dialog>
+    </body>
+    <script src="displayBook.js"></script>
+    <script src="addBook.js"></script>
+</html>
